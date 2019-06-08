@@ -46,13 +46,12 @@ Paginate = 5
   enableRSS = true
 
 [social]
-	twitter-square = "https://twitter.com/tsalikispk"
-	github-square = "https://github.com/tsalik"
+  twitter-square = "https://twitter.com/tsalikispk"
+  github-square = "https://github.com/tsalik"
   linkedin-square = "https://www.linkedin.com/in/kostas-tsalikis-400002126/"
 
 [taxonomies]
   tag = "tags"
 
-[services]
-  [services.twitter]
-    disableInlineCSS = true
+[outputs]
+  section = ["HTML", "RSS", "JSON"]

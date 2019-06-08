@@ -1,0 +1,8 @@
+{
+    "title": "{{ .Title }}",
+    "published" : "{{ .PublishDate }}",
+    "lastMod" : "{{ .Lastmod }}",
+    "description" : "{{ .Description }}",
+    "tags" : {{ .Params.tags | jsonify }},
+    "permalink" : "{{ .RelPermalink }}"
+}
