@@ -55,3 +55,4 @@ Paginate = 5
 
 [outputs]
   section = ["HTML", "RSS", "JSON"]
+  page = ["HTML", "RSS", "JSON"] 
