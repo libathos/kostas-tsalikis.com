@@ -6,8 +6,11 @@ description: "A small overview on how to publish an Android open-source library 
 ---
 
 Facing a lack of inspiration for quite some time I decided to draw some from an old project of mine. A couple of years ago I created an open-source library named [`target-layout`](https://github.com/tsalik/target-layout) which was basically a `FrameLayout` that draws a view on its center and some `drawables` around it, letting the user pinch zoom on the view and select through a range of levels.
+{{% caption %}}
+![](/gifs/targetlayout.gif)    
 
-{{< caption image="/gifs/targetlayout.gif" alt="TargetLayout animation" caption=" Of course a GIF might be the best way to showcase what the library does." >}}
+*Of course a GIF might be the best way to showcase what the library does.*
+{{% /caption %}}
 
 
 Apart from the joy of creating a custom and unique UI and delving into the depths of how a view is measured, laid-out and drawn I decided to learn how to publish the library on JCenter. Unfortunately, I haven't been the world’s best maintainer, so I left the library targeting old Android SDK versions, without any support for AndroidX. What's more, I had left the project without Continuous Integration (CI from now on) and as the years passed, I forgot how publishing on JCenter works, so I decided to revisit these topics before doing any further work with the library itself.

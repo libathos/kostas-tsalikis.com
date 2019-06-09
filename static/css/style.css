@@ -1021,7 +1021,11 @@ a.symbol:hover {
   margin: auto;
 }
 
-.caption-responsive-image {
+.caption {
+    diplay: block;
+}
+
+.caption img {
   width: auto;
   margin: auto;
   height: auto;
@@ -1029,8 +1033,7 @@ a.symbol:hover {
   display: block;
 }
 
-.image-caption-text {
-  text-align: center;
-  font-style: italic;
-  margin-top: 1em;
+
+.caption p {
+    text-align: center;
 }

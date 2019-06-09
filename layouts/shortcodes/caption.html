@@ -1,4 +1,3 @@
-<div class="{{.Get "style"}}">
-  <img class="caption-responsive-image" src="{{.Get "image"}}" alt="{{.Get "alt"}}"/>
-  <p class="image-caption-text">{{.Get "caption"}}</p>
+<div class="caption"> 
+    {{ .Inner | markdownify }}
 </div>
