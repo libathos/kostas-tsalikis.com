@@ -1023,6 +1023,7 @@ a.symbol:hover {
 
 .caption {
     diplay: block;
+    text-align: center;
 }
 
 .caption img {
