@@ -27,19 +27,31 @@ The name of the technique is a little bit misleading, as it contains the term "b
 
 Let's say the initial structure of your code is something like this:
 
-{{< caption image="/images/posts/bba/initial_structure.png" alt="Initial structure" caption="Initial Structure." style="image-caption">}}
+{{% caption %}}
+![Initial structure](/images/posts/bba/initial_structure.png) 
+*Initial structure.*
+{{% /caption %}}
 
 The steps for BbA are:
 
 1. Add an abstraction over the current old implementation.
 2. Refactor so all the clients use the abstraction above instead of the old implementation directly.
-   {{< caption image="/images/posts/bba/step1-2.png" alt="Steps 1 & 2" caption="Steps 1 & 2." >}}
+    {{% caption %}}![Steps 1 & 2](/images/posts/bba/step1-2.png)Steps 1 & 2.{{% /caption %}}
 3. Add the new implementation under that abstraction and gradually delegate to the new implementation as needed.
-   {{< caption image="/images/posts/bba/step3.png" alt="Step 3" caption="Step 3." >}}
+    {{% caption %}}
+![Step 3](/images/posts/bba/step3.png)
+{{% /caption %}}
 4. Once the old implementation is no longer used, it can be deleted.
-   {{< caption image="/images/posts/bba/step4.png" alt="Step 4" caption="Step 4." >}}
+    {{% caption %}}
+![Step 4](/images/posts/bba/step4.png)
+{{% /caption %}}
 5. Once the refactoring is over, delete the abstraction layer.
-   {{< caption image="/images/posts/bba/step5.png" alt="Step 5" caption="Step 5." >}}
+    {{% caption %}}
+![Step 5](/images/posts/bba/step5.png)
+{{% /caption %}}
+
+
+
 
 Although Martin Fowler describes some variations, the general idea is that you create an abstraction over the implementation that needs replacement, find the appropriate behaviour that the abstraction must implement, change the client code to use that abstraction and incrementally add the new code.
 
